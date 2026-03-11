@@ -29,7 +29,6 @@ export const Useeffect = () => {
       <h1>Imperios creados {imperio}</h1>
 
       <Box
-        component="card"
         sx={{
           width: { xs: "100%", sm: "85%", md: "65%", lg: "50%" },
           overflow: "hidden",

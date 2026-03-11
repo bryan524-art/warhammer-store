@@ -107,7 +107,6 @@ export const Content = () => {
         </Typography>
       </Box>
         <Box 
-        component="card"
         sx={{
           mx: 3,
           my: 2,
@@ -207,7 +206,6 @@ export const Content = () => {
             boxShadow: "2px 4px 8px rgba(0,0,0,0.3)",
           }}>
           <Box
-            component="card"
             sx={{
               width: "100%",
               height: { xs: "55%", sm: "60%", md: "65%" },
@@ -285,7 +283,6 @@ export const Content = () => {
             boxShadow: "2px 4px 8px rgba(0,0,0,0.3)",
           }}>
           <Box
-            component="card"
             sx={{
               width: "100%",
               height: { xs: "55%", sm: "60%", md: "65%" },

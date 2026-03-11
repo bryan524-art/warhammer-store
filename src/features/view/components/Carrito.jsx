@@ -3,7 +3,7 @@ import * as React from "react";
 import { Card, CardContent, CardActions, Typography, Box, Button } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-export const Car = () => {
+export const Carrito = () => {
 
   const [compra, setCompra] = React.useState([]);
 

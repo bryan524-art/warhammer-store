@@ -32,7 +32,6 @@ export const Usestate = () => {
         los ultra marines
         </Box>
           <Box
-            component="card"
             sx={{
               overflow: "hidden",
             }}>
@@ -60,7 +59,6 @@ export const Usestate = () => {
           los templarios oscuros
         </Box>
           <Box
-            component="card"
             sx={{
               overflow: "hidden",
             }}>
@@ -88,7 +86,6 @@ export const Usestate = () => {
           los angeles sangrientos
         </Box>
           <Box
-            component="card"
             sx={{
               overflow: "hidden",
             }}>
