@@ -69,6 +69,14 @@ export const Content = () => {
         Ver repositorio en GitHub
         </Button>
 
+                <Button
+        href="https://vercel.com/bryan524-arts-projects/warhammer-store-ac67"
+        target="_blank"
+        variant="contained"
+        sx={{ backgroundColor: "#1976D2" }}
+        >
+        Ver repositorio vercel
+        </Button>
       </Box>
 
     </Box>
