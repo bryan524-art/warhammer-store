@@ -9,6 +9,7 @@ import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import SearchIcon from '@mui/icons-material/Search';
 import AccessibilityNewIcon from '@mui/icons-material/AccessibilityNew';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 import { AppBar, Toolbar, Button, Stack, Typography, Box, TextField } from '@mui/material'
 
@@ -155,6 +156,10 @@ export const Header = () => {
             Buscar
           </Button>
 
+          <NavLink to="/car" variant="contained">
+            <AddShoppingCartIcon sx={styleicon} />
+          </NavLink>
+
           </Box>
 
         </Box>
@@ -210,4 +215,9 @@ const buttonStyle = {
       md: "14px"
     }
   }
+}
+
+const styleicon = {
+  color: "white"
+  
 }

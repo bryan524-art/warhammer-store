@@ -21,6 +21,22 @@ export const Article = () => {
     localStorage.setItem("favoritos", JSON.stringify(nuevosFavoritos));
   };
 
+  // carrito de compras 
+
+    const [compra, setCompra] = React.useState(() => {
+    const guardados = localStorage.getItem("compra");
+    return guardados ? JSON.parse(guardados) : [];
+  });
+
+  const agregarCompra = (articulo) => {
+
+    const nuevosCompra = [...compra, articulo];
+
+    setCompra(nuevosCompra);
+
+    localStorage.setItem("compra", JSON.stringify(nuevosCompra));
+  };
+
     return(
       
     <Box component="main" sx={{
@@ -137,7 +153,11 @@ export const Article = () => {
                 flexWrap: "wrap",
                 gap: 1,
               }}>
-              <Button variant="contained" sx={buttonStyle}>
+              <Button onClick={() => agregarCompra({
+                nombre: "Teniente Primaris Ultramarines",
+                precio: "150000",
+                imagen: "/Warhammer-figura1.png"
+              })} variant="contained" sx={buttonStyle}>
                 <AddShoppingCartIcon sx={IconStyle} />
                 <Typography component="span" sx={TextStyle}>Comprar</Typography>
               </Button>
@@ -229,7 +249,11 @@ export const Article = () => {
                 flexWrap: "wrap",
                 gap: 1,
               }}>
-              <Button variant="contained" sx={buttonStyle}>
+              <Button onClick={() => agregarCompra({
+                nombre: "Capellan de Warhammer 40k",
+                precio: "200.000 COP",
+                imagen: "/Warhammer-figura2.png"
+              })} variant="contained" sx={buttonStyle}>
                 <AddShoppingCartIcon sx={IconStyle} />
                 <Typography component="span" sx={TextStyle}>Comprar</Typography>
               </Button>
@@ -321,7 +345,11 @@ export const Article = () => {
                 flexWrap: "wrap",
                 gap: 1,
               }}>
-              <Button variant="contained" sx={buttonStyle}>
+              <Button onClick={() => agregarCompra({
+                nombre: "Espiritu de batalla Ultramarines",
+                precio: "180.000 COP",
+                imagen: "/Warhammer-figura3.png"
+              })} variant="contained" sx={buttonStyle}>
                 <AddShoppingCartIcon sx={IconStyle} />
                 <Typography component="span" sx={TextStyle}>Comprar</Typography>
               </Button>
@@ -413,7 +441,11 @@ export const Article = () => {
                 flexWrap: "wrap",
                 gap: 1,
               }}>
-              <Button variant="contained" sx={buttonStyle}>
+              <Button onClick={() => agregarCompra({
+                nombre: "Marin de los Angeles sangrientos",
+                precio: "160.000 COP",
+                imagen: "/Warhammer-figura4.png"
+              })} variant="contained" sx={buttonStyle}>
                 <AddShoppingCartIcon sx={IconStyle} />
                 <Typography component="span" sx={TextStyle}>Comprar</Typography>
               </Button>
@@ -516,7 +548,11 @@ export const Article = () => {
                 flexWrap: "wrap",
                 gap: 1,
               }}>
-              <Button variant="contained" sx={buttonStyle}>
+              <Button onClick={() => agregarCompra({
+                nombre: "lord calgar warhammer",
+                precio: "300.000 COP",
+                imagen: "/Warhammer-figura5.png"
+              })} variant="contained" sx={buttonStyle}>
                 <AddShoppingCartIcon sx={IconStyle} />
                 <Typography component="span" sx={TextStyle}>Comprar</Typography>
               </Button>
@@ -608,7 +644,11 @@ export const Article = () => {
                 flexWrap: "wrap",
                 gap: 1,
               }}>
-              <Button variant="contained" sx={buttonStyle}>
+              <Button onClick={() => agregarCompra({
+                nombre: "Supero marina templaria oscura",
+                precio: "190.000 COP",
+                imagen: "/Warhammer-figura6.png"
+              })} variant="contained" sx={buttonStyle}>
                 <AddShoppingCartIcon sx={IconStyle} />
                 <Typography component="span" sx={TextStyle}>Comprar</Typography>
               </Button>
@@ -700,7 +740,11 @@ export const Article = () => {
                 flexWrap: "wrap",
                 gap: 1,
               }}>
-              <Button variant="contained" sx={buttonStyle}>
+              <Button onClick={() => agregarCompra({
+                nombre: "Teniente Primaris Templario oscuro",
+                precio: "150000",
+                imagen: "/Warhammer-figura7.png"
+              })} variant="contained" sx={buttonStyle}>
                 <AddShoppingCartIcon sx={IconStyle} />
                 <Typography component="span" sx={TextStyle}>Comprar</Typography>
               </Button>
@@ -792,7 +836,11 @@ export const Article = () => {
                 flexWrap: "wrap",
                 gap: 1,
               }}>
-              <Button variant="contained" sx={buttonStyle}>
+              <Button onClick={() => agregarCompra({
+                nombre: "Teniente Primaris Gladiator",
+                precio: "150000",
+                imagen: "/Warhammer-figura8.png"
+              })} variant="contained" sx={buttonStyle}>
                 <AddShoppingCartIcon sx={IconStyle} />
                 <Typography component="span" sx={TextStyle}>Comprar</Typography>
               </Button>

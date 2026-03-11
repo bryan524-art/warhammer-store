@@ -44,6 +44,7 @@ export const Myaccount = () => {
         justifyContent: "center",
         borderRadius: "20px",
         boxShadow: "2px 4px 8px rgba(0,0,0,0.3)",}}>
+        Iniciar sesion o Registarte
         {login}
       </Card>
     </Box>

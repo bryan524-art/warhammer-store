@@ -12,6 +12,8 @@ import { Myfavoritie } from './features/auth/components/Myfavoritie'
 //components View
 import { Article } from './features/view/components/Article'
 import { Offers } from './features/view/components/Offers'
+import { Car } from './features/view/components/Car'
+
 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
             <Route path="/myaccount" element={<Myaccount />} />
             <Route path="/mybusy" element={<Mybusy />} />
             <Route path="/myfavoritie" element={<Myfavoritie />} />
+            <Route path="/car" element={<Car />} />
           </Routes>
         </Box>
 
