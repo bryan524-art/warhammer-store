@@ -60,6 +60,15 @@ export const Content = () => {
           de los personajes más icónicos de esta saga.
         </Typography>
 
+        <Button
+        href="https://github.com/bryan524-art/warhammer-store"
+        target="_blank"
+        variant="contained"
+        sx={{ backgroundColor: "#1976D2" }}
+        >
+        Ver repositorio en GitHub
+        </Button>
+
       </Box>
 
     </Box>
