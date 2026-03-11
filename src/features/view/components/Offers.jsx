@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { Usestate } from '../hooks/UseState'
+import { Usestate } from '../hooks/Usestate'
 import { Useeffect } from '../hooks/Useeffect'
 import { Useeffect2 } from '../hooks/Useeffect2'
 import { Usecontext } from '../hooks/Usecontext'
